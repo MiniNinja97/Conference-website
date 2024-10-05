@@ -8,3 +8,44 @@
 body {
     background-color: #000000;
 }
+
+/*här börjar header css*/
+
+header{
+	background-color: black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2em;
+	flex-wrap: wrap;
+	margin-bottom: 10em;
+}
+
+a { 
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	font-weight:bold
+}
+
+.event-namn{
+	font-size: 3em;
+	font-style: italic;
+	color: white;
+	margin-right: 6.4em;
+	margin-left: 2em;
+	
+}
+
+.kalender-link{
+	margin-right: 10em;
+}
+
+.kalender-link:hover {
+	color: aqua;
+}
+
+.form-link:hover {
+	color: aqua;
+
+}
