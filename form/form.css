@@ -32,6 +32,7 @@ header{
 	padding: 2em;
 	flex-wrap: wrap;
 	margin-bottom: 10em;
+	flex-wrap: wrap;
 }
 
 a { 
@@ -61,4 +62,56 @@ a {
 .form-link:hover {
 	color: aqua;
 
+}
+/* här sluter header css*/
+
+.registration{
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
+	align-items: center;
+	color: white;
+    background-color: rgba(27, 26, 26, 0.637);
+    /*margin-left: 28em;
+	margin-right: 28em;*/
+    padding: 4em;
+    margin-bottom: 10em;
+	margin-top: 5em;
+	font-size: 1.2em;
+	width: 40em;
+	
+	
+}
+label {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+	
+}
+ .namn {
+	max-width: 60em;
+	height: 2.5em;
+	border-radius: 10px;
+	border: 0px;
+	padding: 0.5em;
+	cursor: pointer;
+	
+	
+ }
+.input {
+	display: flex;
+    flex-direction: row;
+	margin-top: 2em;
+	flex-wrap: wrap;
+	
+}
+.input-box1  {
+	display: flex;
+	flex-direction: column;
+	margin-left: 4em;
+}
+.input-box2  {
+	display: flex;
+	flex-direction: column;
+	margin-right: 4em;
 }
