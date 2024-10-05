@@ -1,13 +1,11 @@
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-    font-family: "Roboto", sans-serif;
+	font-family: "Roboto", sans-serif;
 }
 
-body {
-    background-color: #000000;
-}
+body {background-color: black;}
 
 .background{
 	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
@@ -22,7 +20,7 @@ body {
     z-index: -1; 
 }
 
-/*här börjar header css*/
+/* här börjar headerns css*/
 
 header{
 	background-color: black;
@@ -32,15 +30,16 @@ header{
 	padding: 2em;
 	flex-wrap: wrap;
 	margin-bottom: 10em;
-	flex-wrap: wrap;
 }
 
 a { 
 	text-decoration: none;
 	color: white;
-	font-size: 1.4em;
-	font-weight:bold
+	
+}
 
+a:hover {
+	color: aqua;
 }
 
 .event-namn{
@@ -52,8 +51,21 @@ a {
 	
 }
 
+.event-namn:hover{
+
+	color: aqua;
+}
+
 .kalender-link{
 	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.form-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
 }
 
 .kalender-link:hover {
@@ -64,6 +76,7 @@ a {
 	color: aqua;
 
 }
+
 /* här sluter header css*/
 
 .registration{
