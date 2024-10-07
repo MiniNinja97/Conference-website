@@ -77,17 +77,32 @@ a {
 /* här börjar main innehåll */
 
 section {
-	display: flex;
+	/*display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	color: white;
 	justify-content: center;
-	margin-bottom: 4em;
+	margin-bottom: 4em;*/
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: row;
+	color: white;
+	justify-content: center;
+	align-items: center;
+    background-color: rgba(27, 26, 26, 0.637);
+   
+    padding: 4em;
+    margin-bottom: 10em;
+	margin-top: 5em;
+	max-width: 60vw;
+	min-width: 40vw;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 img {
 	width: 25vw;
-	
 	margin: 2em;
+	
 }
 .text-container {
 	display: flex;
