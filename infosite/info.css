@@ -1,0 +1,76 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+body {background-color: black;}
+
+.background{
+	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;              
+    z-index: -1; 
+}
+
+/* här börjar headerns css*/
+
+header{
+	background-color: black;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding: 2em;
+	flex-wrap: wrap;
+	margin-bottom: 10em;
+}
+
+a { 
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	font-weight:bold
+}
+
+.event-namn{
+	font-size: 3em;
+	font-style: italic;
+	color: white;
+	margin-right: 6.4em;
+	margin-left: 2em;
+	
+}
+
+.event-namn:hover{
+	color: aqua;
+}
+
+.kalender-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.form-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.kalender-link:hover {
+	color: aqua;
+}
+
+.form-link:hover {
+	color: aqua;
+
+}
+
+/* här sluter header css*/
