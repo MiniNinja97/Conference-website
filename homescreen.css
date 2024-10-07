@@ -78,17 +78,23 @@ a {
 
 /*Här börjar main css*/
 .Info{
+	flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
 	color: white;
+	justify-content: center;
+	align-items: center;
     background-color: rgba(27, 26, 26, 0.637);
-    margin-left: 28em;
-	margin-right: 28em;
+    /*margin-left: 28em;
+	margin-right: 28em;*/
     padding: 4em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20em;
+    margin-bottom: 10em;
 	margin-top: 5em;
 	font-size: 1.2em;
+	max-width: 60vw;
+	min-width: 40vw;
+	margin-left: 20%;
+	margin-right: 20%;
 	
 	
 }
@@ -148,6 +154,9 @@ p{
 	}
 	.kalender-link{
 		margin-right: 4em;
+	}
+	.titel {
+		font-size: 1.8em;
 	}
 
 }
