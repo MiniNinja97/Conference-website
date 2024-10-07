@@ -141,7 +141,7 @@ p{
 	}
 
 	to {
-		opacity: 4;
+		opacity: 1;
 	}
 } 
 @media (max-width:720px) {
