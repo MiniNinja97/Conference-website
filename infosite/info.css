@@ -74,3 +74,17 @@ a {
 }
 
 /* här sluter header css*/
+
+@media (max-width:720px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	a {
+		margin-top: 1em;
+	}
+	.kalender-link{
+		margin-right: 4em;
+	}
+
+}
