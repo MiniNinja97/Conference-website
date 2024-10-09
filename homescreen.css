@@ -25,13 +25,15 @@ body {background-color: black;}
 header{
 	background-color: black;
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 2em;
 	flex-wrap: wrap;
 	margin-bottom: 10em;
 }
-
+.mellanrum {
+	flex-grow: 1;
+}
 a { 
 	text-decoration: none;
 	color: white;
@@ -43,7 +45,7 @@ a {
 	font-size: 3em;
 	font-style: italic;
 	color: white;
-	margin-right: 6.4em;
+	
 	margin-left: 2em;
 	
 }
