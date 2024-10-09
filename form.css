@@ -84,6 +84,7 @@ a {
 	color: white;
 	justify-content: center;
 	align-items: center;
+	
     background-color: rgba(27, 26, 26, 0.637);
     /*margin-left: 28em;
 	margin-right: 28em;*/
@@ -105,6 +106,7 @@ label {
 }
  .namn {
 	max-width: 20em;
+	
 	height: 3em;
 	border-radius: 10px;
 	border: 0px;
@@ -127,21 +129,21 @@ label {
 .input-box1  {
 	display: flex;
 	flex-direction: column;
-	margin-left: 4em;
-	margin-right: 1em;
+margin: 1em;
+	
 }
 .input-box2  {
 	display: flex;
 	flex-direction: column;
-	margin-right: 4em;
-	margin-left: 1em;
+	margin: 1em;
+	
 }
 .input-box3  {
 	display: flex;
 	flex-direction: column;
 }
 .email {
-	min-width: 30em;
+	width: 30em;
 	height: 3em;
 	border-radius: 10px;
 	border: 0px;
@@ -159,8 +161,9 @@ label {
 .form-checkbox {
 	display: flex;
 	flex-direction: row;
+	
 	margin-top: 1em;
-	margin-right: 14.2em;
+	margin-right: 25%;
 }
 
 .veckodag{
@@ -179,7 +182,7 @@ label {
 }
 
 .annat {
-	min-width: 30em;
+	width: 30em;
 	height: 10em;
 	border-radius: 10px;
 	border: 0px;
@@ -233,9 +236,21 @@ button:hover {
 		justify-content: center;
 		align-content: center;
 	}
+ .registration{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
 
+ }
+ .email {
+	width: 32em;
+ }
+ .annat {width: 25em;}
 }
-@media (max-width:800px) {
+
+@media (max-width:870px) {
 	body {
 		display: flex;
 		flex-wrap: wrap;
@@ -255,7 +270,20 @@ button:hover {
 		justify-content: center;
 		align-content: center;
 	}
-
+	.registration{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	
+	 }
+	 .email {
+		width: 22em;
+	 }
+	 .annat {
+		width: 20em;
+	}
 }
 
 @media (max-width:720px) {
@@ -278,5 +306,16 @@ button:hover {
 		justify-content: center;
 		align-content: center;
 	}
-
+	.registration{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	
+	 }
+	 .email {
+		width: 15em;
+	 }
+	 .annat {width: 15em;}
 }
