@@ -46,7 +46,7 @@ a {
 	font-style: italic;
 	color: white;
 	
-	margin-left: 2em;
+	margin-left: 1em;
 	
 }
 
@@ -79,19 +79,15 @@ a {
 /* här börjar main innehåll */
 
 section {
-	/*display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	color: white;
-	justify-content: center;
-	margin-bottom: 4em;*/
+	
 	flex-wrap: wrap;
 	display: flex;
 	flex-direction: row;
 	color: white;
 	justify-content: center;
 	align-items: center;
-    margin-bottom: 10em;
+	
+    margin-bottom: 8em;
 }
 .animation {
 	background-color: rgba(27, 26, 26, 0.637);
@@ -108,11 +104,22 @@ h2 {
 	display: flex;
 	justify-content: center;
 	align-content: center;
+	text-align: center;
 	color: white;
 	font-weight: bold;
-	margin-bottom: 8em;
+	margin-bottom: 2em;
 	font-size: 3em;
 }
+p{ 
+	color: white;
+	font-size: 1.4em;
+	text-align: center;
+}
+.bottom{
+	margin-bottom: 16em;
+	margin-top: 1em;
+}
+
 img {
 	width: 25vw;
 	margin: 2em;
@@ -129,7 +136,7 @@ img {
 h3 {
 	margin-bottom: 1em;
 }
-p{
+.information{
 	margin-bottom: 1em;
 }
 li{

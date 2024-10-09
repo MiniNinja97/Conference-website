@@ -43,7 +43,7 @@ a {
 }
 
 .event-namn{
-	font-size: 3em;
+	/* font-size: 3em; */
 	font-style: italic;
 	color: white;
 	padding-left: 1em;
