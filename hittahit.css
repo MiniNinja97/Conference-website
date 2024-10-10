@@ -1,0 +1,171 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+body {background-color: black;}
+
+.background{
+	background-image: url(img/headway-F2KRf_QfCqw-unsplash\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;              
+    z-index: -1; 
+}
+
+
+/* här börjar headerns css*/
+
+header{
+	background-color: black;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2em;
+	flex-wrap: wrap;
+	margin-bottom: 10em;
+}
+.mellanrum {
+	flex-grow: 1;
+}
+a { 
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	font-weight:bold
+}
+
+.event-namn{
+	font-size: 3em;
+	font-style: italic;
+	color: white;
+	
+	margin-left: 1em;
+	
+}
+
+.event-namn:hover{
+	color: aqua;
+}
+
+.kalender-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.form-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.kalender-link:hover {
+	color: aqua;
+}
+
+.form-link:hover {
+	color: aqua;
+
+}
+
+/* här sluter header css*/
+
+/* här börjar main css*/
+.Info{
+	color: white;
+    background-color: rgba(27, 26, 26, 0.637);
+    margin-left: 28em;
+	margin-right: 28em;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20em;
+	margin-top: 5em;
+	font-size: 1.2em;
+	
+	
+}
+p {
+	padding: 0.5em;
+	margin: 1em;
+}
+
+
+/*responsivitet*/
+
+@media (max-width:900px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	.titel {
+		font-size: 1.8em;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+}
+@media (max-width:800px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	.titel {
+		font-size: 1.8em;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+}
+
+@media (max-width:720px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	.titel {
+		font-size: 1.8em;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+
+}
