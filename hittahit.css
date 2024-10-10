@@ -75,19 +75,22 @@ a {
 	color: aqua;
 
 }
+a:hover {
+	color: aqua;
+}
 
 /* här sluter header css*/
 
 /* här börjar main css*/
 .Info{
 	color: white;
-    background-color: rgba(27, 26, 26, 0.637);
-    margin-left: 28em;
-	margin-right: 28em;
+    background-color: rgba(27, 26, 26, 0.788);
+    margin-left: 20%;
+	margin-right: 20%;
     padding: 4em;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    
     margin-bottom: 20em;
 	margin-top: 5em;
 	font-size: 1.2em;
@@ -95,10 +98,23 @@ a {
 	
 }
 p {
-	padding: 0.5em;
-	margin: 1em;
+	margin-bottom: 1em;
+	
 }
-
+h3 {
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+ .titel {
+	align-self: center;
+	margin-bottom: 4em;
+ }
+  .karta{
+	display: flex;
+	flex-direction: column;
+	width: 20vw;
+	margin: 2em;
+  }
 
 /*responsivitet*/
 
