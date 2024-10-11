@@ -50,9 +50,9 @@ a {
 	
 }
 
-.event-namn:hover{
+/* .event-namn:hover{
 	color: aqua;
-}
+} */
 
 .kalender-link{
 	margin-right: 10em;
@@ -65,15 +65,18 @@ a {
 	font-size: 1.4em;
 	font-weight: bold;
 }
+a:hover {
+	color: aqua;
+}
 
-.kalender-link:hover {
+/* .kalender-link:hover {
 	color: aqua;
 }
 
 .form-link:hover {
 	color: aqua;
 
-}
+} */
 
 /* här sluter header css*/
 
@@ -215,6 +218,7 @@ button {
 	font-size: 0.8em;
 	border-radius: 8px;
 	color: white;
+	box-shadow: 1 1 1.4 1.2 grey;
 	
 }
 

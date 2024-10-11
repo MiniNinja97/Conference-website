@@ -50,9 +50,9 @@ a {
 	
 }
 
-.event-namn:hover{
+/* .event-namn:hover{
 	color: aqua;
-}
+} */
 
 .kalender-link{
 	margin-right: 10em;
@@ -65,15 +65,18 @@ a {
 	font-size: 1.4em;
 	font-weight: bold;
 }
+a:hover {
+	color: aqua;
+}
 
-.kalender-link:hover {
+/* .kalender-link:hover {
 	color: aqua;
 }
 
 .form-link:hover {
 	color: aqua;
 
-}
+} */
 
 /* här sluter header css*/
 /* här börjar main innehåll */
@@ -100,7 +103,7 @@ section {
 	margin-left: 20%;
 	margin-right: 20%;
 }
-h2 {
+h1 {
 	display: flex;
 	justify-content: center;
 	align-content: center;
@@ -108,21 +111,22 @@ h2 {
 	color: white;
 	font-weight: bold;
 	margin-bottom: 2em;
-	font-size: 3em;
+	font-size: 4em;
 }
 p{ 
 	color: white;
-	font-size: 1.4em;
-	text-align: center;
+	font-size: 1.1em;
+	text-align:
 }
 .bottom{
-	margin-bottom: 16em;
+	margin-bottom: 14em;
 	margin-top: 1em;
 }
 
 img {
 	width: 25vw;
 	margin: 2em;
+	box-shadow: 0 0 0.4em 0.2em rgba(0, 0, 0, 0.541);
 
 }
 .text-container {
@@ -138,6 +142,14 @@ h3 {
 }
 .information{
 	margin-bottom: 1em;
+}
+.info-text {
+text-align: center;
+font-size: 1.2em;
+line-height: 1.5em;
+}
+ul {
+	margin-top: 0.5em;
 }
 li{
 	margin-bottom: 0.5em;
