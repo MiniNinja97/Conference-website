@@ -5,8 +5,7 @@
 	font-family: "Roboto", sans-serif;
 }
 
-body {background-color: black;
-font-family: "Roboto", sans-serif;}
+body {background-color: black;}
 
 .background{
 	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
@@ -26,9 +25,8 @@ font-family: "Roboto", sans-serif;}
 header{
 	background-color: black;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
-	flex-wrap: wrap;
 	padding: 2em;
 	flex-wrap: wrap;
 	margin-bottom: 10em;
@@ -47,9 +45,8 @@ a {
 	font-size: 3em;
 	font-style: italic;
 	color: white;
-	padding-left: 1em;
 	
-	
+	margin-left: 1em;
 	
 }
 
@@ -68,7 +65,6 @@ a {
 	font-size: 1.4em;
 	font-weight: bold;
 }
-
 a:hover {
 	color: aqua;
 }
@@ -86,13 +82,21 @@ a:hover {
 
 
 /*Här börjar main css*/
-.Info{
-	flex-wrap: wrap;
+
+.flexbox {
 	display: flex;
 	flex-direction: column;
 	color: white;
 	justify-content: center;
 	align-items: center;
+}
+.Info{
+	
+	/* display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	align-items: center; */
     background-color: rgba(27, 26, 26, 0.637);
     /*margin-left: 28em;
 	margin-right: 28em;*/
@@ -101,9 +105,8 @@ a:hover {
 	margin-top: 5em;
 	font-size: 1.2em;
 	max-width: 60vw;
-	min-width: 40vw;
-	margin-left: 20%;
-	margin-right: 20%;
+	
+	
 	
 	
 }
@@ -153,53 +156,11 @@ p{
 		opacity: 1;
 	}
 } 
-@media (max-width:900px) {
-	body {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-	}
-	a {
-		margin-top: 1em;
-		margin-left: 4em;
-	}
-	
-	.titel {
-		font-size: 1.8em;
-	}
-	header {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
 
-}
-@media (max-width:800px) {
-	body {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-		align-content: center;
-	}
-	a {
-		margin-top: 1em;
-		margin-left: 4em;
-	}
-	
-	.titel {
-		font-size: 1.8em;
-	}
-	header {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
 
-}
 
 @media (max-width:720px) {
-	body {
+	.flexbox {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
