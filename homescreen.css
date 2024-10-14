@@ -5,7 +5,8 @@
 	font-family: "Roboto", sans-serif;
 }
 
-body {background-color: black;}
+body {background-color: black;
+font-family: "Roboto", sans-serif;}
 
 .background{
 	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
@@ -47,6 +48,7 @@ a {
 	font-style: italic;
 	color: white;
 	padding-left: 1em;
+	
 	
 	
 }
