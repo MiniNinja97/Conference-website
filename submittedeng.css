@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
+}
+
+body {background-color: black;}
+
+.background{
+	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+    height: 100vh;
+    width: 100%;
+    position: fixed;              
+    z-index: -1; 
+}
+
+/* här börjar headerns css*/
+
+header{
+	background-color: black;
+	display: flex;
+	
+	justify-content: space-evenly;
+	align-items: center;
+	padding: 2em;
+	flex-wrap: wrap;
+	margin-bottom: 10em;
+}
+.mellanrum {
+	flex-grow: 1;
+}
+a { 
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+	font-weight:bold
+}
+
+.flagga {
+	
+	margin-right: 1em;
+}
+
+.event-namn{
+	font-size: 3em;
+	font-style: italic;
+	color: white;
+	
+	margin-left: 1em;
+	
+}
+
+/* .event-namn:hover{
+	color: aqua;
+} */
+
+.kalender-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.form-link{
+	margin-right: 10em;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+a:hover {
+	color: aqua;
+}
+
+/* .kalender-link:hover {
+	color: aqua;
+}
+
+.form-link:hover {
+	color: aqua;
+
+} */
+
+/* här sluter header css*/
+
+.Info{
+	color: white;
+    background-color: rgba(27, 26, 26, 0.637);
+    margin-left: 20%;
+	margin-right: 20%;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    align-items: center;
+    
+	font-size: 1.2em;
+	
+	
+}
+p {
+	padding: 0.5em;
+	margin: 1em;
+}
+.kontakt:hover {
+	color: aqua;
+}
+
+/*responsivitet*/
+
+@media (max-width:720px) {
+	.Info {
+		display: flex;
+		
+		justify-content: center;
+		align-content: center;
+		font-size: 0.8em;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	
+}
