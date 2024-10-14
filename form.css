@@ -228,7 +228,7 @@ button:hover {
 }
 
 
-@media (max-width:900px) {
+/* @media (max-width:900px) {
 	body {
 		display: flex;
 		flex-wrap: wrap;
@@ -296,7 +296,7 @@ button:hover {
 	 .annat {
 		width: 20em;
 	}
-}
+} */
 
 @media (max-width:720px) {
 	body {
