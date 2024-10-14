@@ -81,7 +81,7 @@ a:hover {
 /* här sluter header css*/
 
 .registration{
-	flex-wrap: wrap;
+	
 	display: flex;
 	flex-direction: column;
 	color: white;
