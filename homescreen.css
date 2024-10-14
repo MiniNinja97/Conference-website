@@ -25,6 +25,7 @@ body {background-color: black;}
 header{
 	background-color: black;
 	display: flex;
+	
 	justify-content: space-evenly;
 	align-items: center;
 	padding: 2em;
@@ -39,6 +40,11 @@ a {
 	color: white;
 	font-size: 1.4em;
 	font-weight:bold
+}
+
+.flagga {
+	
+	margin-right: 1em;
 }
 
 .event-namn{
