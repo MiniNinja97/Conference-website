@@ -92,7 +92,7 @@ a:hover {
  .flexbox {
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: rgb(252, 239, 239);
 	justify-content: center;
 	align-content: center;
 	
@@ -109,7 +109,7 @@ a:hover {
 	
 	 display: flex;
 	flex-direction: column;
-	color: white;
+	color: rgb(252, 239, 239);
 	justify-content: center;
 	align-content: center;
 	align-items: center;

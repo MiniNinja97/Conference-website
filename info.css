@@ -92,7 +92,7 @@ section {
 	flex-wrap: wrap;
 	display: flex;
 	flex-direction: row;
-	color: white;
+	color: rgb(252, 239, 239);
 	justify-content: center;
 	align-items: center;
 	
@@ -114,13 +114,13 @@ h1 {
 	justify-content: center;
 	align-content: center;
 	text-align: center;
-	color: white;
+	color: rgb(252, 239, 239);
 	font-weight: bold;
 	margin-bottom: 2em;
 	font-size: 4em;
 }
 p{ 
-	color: white;
+	color: rgb(252, 239, 239);
 	font-size: 1.1em;
 	
 }

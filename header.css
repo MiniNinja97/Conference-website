@@ -5,7 +5,7 @@
 	font-family: "Roboto", sans-serif;
 }
 
-body {background-color: black;}
+body {background-color: rgb(12, 11, 11);}
 
 .background{
 	background-image: url(img/headway-F2KRf_QfCqw-unsplash.jpg);
@@ -23,7 +23,7 @@ body {background-color: black;}
 /* här börjar headerns css*/
 
 header{
-	background-color: black;
+	background-color: rgb(19, 17, 17);
 	display: flex;
 	
 	justify-content: space-evenly;
@@ -37,7 +37,7 @@ header{
 }
 a { 
 	text-decoration: none;
-	color: white;
+	color: rgb(252, 239, 239);
 	font-size: 1.4em;
 	font-weight:bold
 }
@@ -50,7 +50,7 @@ a {
 .event-namn{
 	font-size: 3em;
 	font-style: italic;
-	color: white;
+	color: rgb(252, 239, 239);
 	
 	margin-left: 1em;
 	
