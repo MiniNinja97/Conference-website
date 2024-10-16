@@ -86,49 +86,5 @@ a:hover {
 
 /* här sluter header css*/
 
-.Info{
-	color: white;
-    background-color: rgba(27, 26, 26, 0.637);
-    margin-left: 20%;
-	margin-right: 20%;
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-	justify-content: center;
-    align-items: center;
-    
-	font-size: 1.2em;
-	
-	
-}
-p {
-	padding: 0.5em;
-	margin: 1em;
-}
-.kontakt:hover {
-	color: aqua;
-}
 
-/*responsivitet*/
-
-@media (max-width:720px) {
-	.Info {
-		display: flex;
-		
-		justify-content: center;
-		align-content: center;
-		font-size: 0.8em;
-	}
-	a {
-		margin-top: 1em;
-		margin-left: 4em;
-	}
-	
-	
-	header {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
-	
-}
+/*Här börjar main css*/

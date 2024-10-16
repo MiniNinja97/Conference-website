@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -22,7 +22,7 @@ body {background-color: black;}
 
 /* här börjar headerns css*/
 
-header{
+/* header{
 	background-color: black;
 	display: flex;
 	
@@ -54,13 +54,13 @@ a {
 	
 	margin-left: 1em;
 	
-}
+} */
 
 /* .event-namn:hover{
 	color: aqua;
 } */
 
-.kalender-link{
+/* .kalender-link{
 	margin-right: 10em;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -73,7 +73,7 @@ a {
 }
 a:hover {
 	color: aqua;
-}
+} */ */
 
 /* .kalender-link:hover {
 	color: aqua;
@@ -84,33 +84,43 @@ a:hover {
 
 } */
 
-/* här sluter header css*/
+/* här sluter header css */
 
 
 /*Här börjar main css*/
 
-.flexbox {
+ .flexbox {
 	display: flex;
 	flex-direction: column;
 	color: white;
 	justify-content: center;
-	align-items: center;
-}
-.Info{
+	align-content: center;
 	
-	/* display: flex;
-	flex-direction: column;
-	color: white;
-	justify-content: center;
-	align-items: center; */
     background-color: rgba(27, 26, 26, 0.637);
     /*margin-left: 28em;
 	margin-right: 28em;*/
-    padding: 4em;
+    /* padding: 4em;
     margin-bottom: 10em;
 	margin-top: 5em;
 	font-size: 1.2em;
-	max-width: 60vw;
+	max-width: 60vw; */
+} 
+.Info{
+	
+	 display: flex;
+	flex-direction: column;
+	color: white;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+    background-color: rgba(27, 26, 26, 0.637);
+     margin-left: 18%;
+	margin-right: 18%; 
+     padding: 4em;
+    margin-bottom: 10em;
+	margin-top: 5em;
+	font-size: 1.2em;
+	max-width: 60vw; 
 	
 	
 	

@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -18,11 +18,11 @@ body {background-color: black;}
     width: 100%;
     position: fixed;              
     z-index: -1; 
-}
+} */
 
 /* här börjar headerns css*/
 
-header{
+/* header{
 	background-color: black;
 	display: flex;
 	
@@ -54,13 +54,13 @@ a {
 	
 	margin-left: 1em;
 	
-}
+} */
 
 /* .event-namn:hover{
 	color: aqua;
 } */
 
-.kalender-link{
+/* .kalender-link{
 	margin-right: 10em;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -73,7 +73,7 @@ a {
 }
 a:hover {
 	color: aqua;
-}
+} */
 
 /* .kalender-link:hover {
 	color: aqua;

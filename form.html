@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bättre webb formsida</title>
 	<link href="form.css" rel="stylesheet">
+	<link rel="stylesheet" href="header.css">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -41,28 +42,31 @@
 			</div>
 
 	<label class="Dagar">Hur många dagar vill du anmäla?</label>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="veckodag">Fredag</lable>
-		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="vackodag">Lördag</lable>
-		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodagSöndag" for="veckodag">Söndag</lable>
-		
-	</p>
+	<div class="flexbox">
+		<p class="form-checkbox">
+			<input  type="checkbox" />
+			<lable class="veckodag" for="veckodag">Fredag</lable>
+			
+		</p>
+		<p class="form-checkbox">
+			<input  type="checkbox" />
+			<lable class="veckodag" for="veckodag">Lördag</lable>
+			
+		</p>
+		<p class="form-checkbox">
+			<input  type="checkbox" />
+			<lable class="veckodag" for="veckodag">Söndag</lable>
+			
+		</p>
+</div>
 	<p class="allergier">
-		<lable>Allergier och övrigt</lable>
+		<lable class="other">Allergier och övrigt</lable>
 		<input class="annat" type="text" placeholder="Övrigt" />
 	</p>
-	
-	<button type="submit"><a href="submitted.html" >Skicka anmälan</a></button>
-		</div>
+	<form action="/submitted.html" method="get">
+	<button type="submit" formaction="/submitted.html" >Skicka anmälan</button>
+	</form>
+</div>
 	
 
 
