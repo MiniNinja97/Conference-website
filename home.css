@@ -181,19 +181,10 @@ p{
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
-	}
-	a {
-		margin-top: 1em;
-		margin-left: 4em;
+		font-size: 1.5em;
+		margin-left: 0;
+		margin-right: 0;
 	}
 	
-	.titel {
-		font-size: 1.8em;
-	}
-	header {
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
 
 }

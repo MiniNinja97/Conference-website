@@ -45,6 +45,8 @@ a {
 .flagga {
 	
 	margin-right: 1em;
+	max-height: 30px;
+	max-width: 44px;
 }
 
 .event-namn{
@@ -87,4 +89,23 @@ a:hover {
 /* här sluter header css*/
 
 
-/*Här börjar main css*/
+@media (max-width:720px) {
+	
+	a {
+		margin-top: 1em;
+		display: flex;
+		flex-direction: column;
+		
+		
+		
+	}
+	
+	.titel {
+		font-size: 1.2em;
+	}
+	
+	
+
+	
+
+}
