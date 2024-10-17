@@ -101,7 +101,7 @@ a:hover {
     margin-bottom: 10em;
 	margin-top: 5em;
 	font-size: 1.2em;
-	max-width: 60vw;
+	min-width: 60vw;
 	margin-left: 20%;
 	margin-right: 20%;
 	
@@ -172,18 +172,41 @@ label {
  }
 
  .flexbox {
-	margin-right: 20%;
+	display: flex;
+	flex-direction: column;
  }
 .form-checkbox {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	margin-top: 1em;
 	
 }
 
-.veckodag{
-	margin-left: 1em;
+.vadförmat1, .vadförmat2, .vadförmat3{
+	display: flex;
+	margin-left: 4.2em; 
+	
+	
 }
+
+.vadförmat-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-left: 2.4em;
+}
+.mat-input1, .mat-input2, .mat-input3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+}
+
 
 
 .allergier {
@@ -209,13 +232,71 @@ input[type="checkbox"] {
 	width: 2em;
 	height: 2em;
 	
-	
+	margin-right: 2em;
 }
 input[type="checkbox"]:hover {
 	cursor: pointer;
 	
 	
 }
+#mat-dag-1 {
+	margin-left: 2em;
+
+}
+#mat-dag-2 {
+	margin-left: 2em;
+}
+#mat-dag-3 {
+	margin-left: 1.8em;
+}
+
+
+
+.vadförmat1, .vadförmat2, .vadförmat3 {
+	opacity: 0;
+	max-height: 0;
+	transition: opacity 0.5s ease-in-out;
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+#mat-dag-1, .mat-lable1,
+#mat-dag-2, .mat-lable2,
+#mat-dag-3, .mat-lable3 {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s;
+	visibility: hidden;
+	
+} 
+ #fredag:checked ~ #mat-dag-1,
+#fredag:checked ~ .mat-lable1,
+#lördag:checked ~ #mat-dag-2,
+#lördag:checked ~ .mat-lable2,
+#söndag:checked ~ #mat-dag-3,
+#söndag:checked ~ .mat-lable3
+
+ {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
+.mat-input1:has(#mat-dag-1:checked) ~ .vadförmat1 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+.mat-input2:has(#mat-dag-2:checked) ~ .vadförmat2 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+.mat-input3:has(#mat-dag-3:checked) ~ .vadförmat3 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+
+
 
 button {
 	padding: 1em;
@@ -318,10 +399,31 @@ button:hover {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-content: center;
+		min-width: 80vw;
 	
 	 }
 	 .email {
 		width: 15em;
 	 }
 	 .annat {width: 15em;}
+	 /* .form-checkbox {
+		margin-left: 20%;
+		
+		
+		margin-right: 20%;
+	 } */
+	 .vadförmat1, .vadförmat2, .vadförmat3 {
+		margin-right: 4.5em;
+		margin-top: 1em;
+		
+		
+
+	 }
+	 /* .vadförmat-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	
+	 } */
 }
