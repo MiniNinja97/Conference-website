@@ -10,60 +10,128 @@
 </head>
 <body>
 	<div class="background"></div>
-	<header>
-		<a class="event-namn" href="home-eng.html">Better Webb</a>
-	   <div class="mellanrum"></div>
-	   
-   <nav>
-	   <a class="kalender-link" href="infoeng.html">Calender</a>
-	   <a class="form-link" href="formeng.html" >Registration</a>
-	   <a class="form-link" href="hittahiteng.html" >Find us</a>
-		<a class="flagga" href="form.html"><img src="img/Sweflag.svg"></a>
-		<a class="flagga" href="#"><img src="img/Engflag.svg"></a>
-   </nav>
-   </header>
-	<div class="registration">
-		<h2>Register for Better Web in Gothenburg 2024!</h2>
-		<p>The conference spans three days and costs 3,000 SEK per day.</p> <p>If you book two days, you receive a 10% discount on the total cost,</p> <p>and if you book all three days, you receive a 20% discount.</p> <p>The invoice will be sent to the email address you provide during registration.</p> <p>Make sure to book to take advantage of the discounts!</p>
-		<div class="input">
-			<div class="input-box1">
-				<label for="">First name</label>
-				<input class="namn" type="text" placeholder="Firstname">
-			</div>
-			<div class="input-box2">
-				<label for="">Last name</label>
-				<input class="namn" type="text" placeholder="Last name">
-			</div>
-	</div>
-
-			<div class="input-box3">
-				<label for="">E-mail</label>
-				<input class="email" type="text" placeholder="E-mail">
-			</div>
-
-	<label class="Dagar">How many days would you like to register for?</label>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="veckodag">Friday</lable>
+		<header>
+			<a class="event-namn" href="home-eng.html">Better Webb</a>
+		<div class="mellanrum"></div>
 		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="vackodag">Saturday</lable>
-		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodagSöndag" for="veckodag">Sunday</lable>
-		
-	</p>
-	<p class="allergier">
-		<lable>Allergies and other notes</lable>
-		<input class="annat" type="text" placeholder="Other" />
-	</p>
-	
-	<button type="submit"><a href="submitteteng.html" >Submit registration</a></button>
+	<nav>
+		<a class="kalender-link" href="infoeng.html">Calender</a>
+		<a class="form-link" href="formeng.html" >Registration</a>
+		<a class="form-link" href="hittahiteng.html" >Find us</a>
+			<a class="flagga" href="form.html"><img src="img/Sweflag.svg"></a>
+			<a class="flagga" href="#"><img src="img/Engflag.svg"></a>
+	</nav>
+	</header>
+		<div class="registration">
+			<h2>Register for Better Web in Gothenburg 2024!</h2>
+			<p>The conference spans three days and costs 3,000 SEK per day.</p> <p>If you book two days, you receive a 10% discount on the total cost,</p> <p>and if you book all three days, you receive a 20% discount.</p> <p>The invoice will be sent to the email address you provide during registration.</p> <p>Make sure to book to take advantage of the discounts!</p>
+			<div class="input">
+				<div class="input-box1">
+					<label for="">First name</label>
+					<input class="namn" type="text" placeholder="Firstname">
+				</div>
+				<div class="input-box2">
+					<label for="">Last name</label>
+					<input class="namn" type="text" placeholder="Last name">
+				</div>
 		</div>
+
+				<div class="input-box3">
+					<label for="">E-mail</label>
+					<input class="email" type="text" placeholder="E-mail">
+				</div>
+
+		<label class="Dagar">How many days would you like to register for?</label>
+		<div class="flexbox">
+			<p class="form-checkbox">
+				<div class="mat-input1">
+					<input id="fredag" type="checkbox" name="dag1-box">
+					<label for="fredag">Friday</label>
+				
+					<input type="checkbox" id="mat-dag-1" name="mat-dag1-box">
+					<label class="mat-lable1" for="mat-dag-1">Do you want food?</label>
+				</div>
+
+				<div class="vadförmat1">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Meat?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fish?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetarian?</label>
+					</p>
+				
+				</div>
+				
+				
+				
+			</p>
+			<p class="form-checkbox">
+				<div class="mat-input2">
+					<input id="lördag" type="checkbox" />
+					<label for="lördag">Saturday</label>
+
+					<input type="checkbox" id="mat-dag-2" name="mat-dag2-box">
+					<label class="mat-lable2" for="mat-dag-2">Do you want food?</label>
+				</div>
+
+				<div class="vadförmat2">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Meat?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fish?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetarian?</label>
+					</p>
+				
+				</div>
+				
+			</p>
+			<p class="form-checkbox">
+				<div class="mat-input3">
+					<input id="söndag" type="checkbox"/>
+					<label for="söndag">Sunday</label>
+
+					<input type="checkbox" id="mat-dag-3" name="mat-dag3-box">
+					<label class="mat-lable3" for="mat-dag-3">Do you want food?</label>
+				</div>
+
+				<div class="vadförmat3">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Meat?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fish?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetarian?</label>
+					</p>
+				
+				</div>
+				
+				
+			</p>
+	</div>
+		<p class="allergier">
+			<lable>Allergies and other notes</lable>
+			<input class="annat" type="text" placeholder="Other" />
+		</p>
+		
+		<button type="submit"><a href="submitteteng.html" >Submit registration</a></button>
+	</div>
 	
 
 
