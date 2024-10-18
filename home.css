@@ -185,6 +185,12 @@ p{
 		margin-left: 0;
 		margin-right: 0;
 	}
+	.Info {
+		padding: 1em;
+	}
+	p {
+		padding: 0.1em;
+	}
 	
 
 }
