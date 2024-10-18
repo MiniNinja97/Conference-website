@@ -1,59 +1,138 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Bättre webb formsida</title>
 	<link href="form.css" rel="stylesheet">
+	<link rel="stylesheet" href="header.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class="background"></div>
 	<header>
-		<h1 class="event-namn" ><a href="home.html" >Bättre Webb</a></h1>
-		<a class="kalender-link" href="#">Kalendarium</a>
-		<a class="form-link" href="#">Anmälan</a>
-	</header>
+		<a class="event-namn" href="index.html">Bättre Webb</a>
+	   <div class="mellanrum"></div>
+	   
+   <nav>
+	   <a class="kalender-link" href="info.html">Kalendarium</a>
+	   <a class="form-link" href="form.html" >Anmälan</a>
+	   <a class="form-link" href="hittahit.html" >Hitta oss</a>
+		<a class="flagga" href="#"><img src="img/Sweflag.svg"></a>
+		<a class="flagga" href="formeng.html"><img src="img/Engflag.svg"></a>
+   </nav>
+   </header>
 	<div class="registration">
-		<h2>Anmäl dig till Bättre Webb i Götegorg 2024!</h2>
-		<div class="input">
-			<div class="input-box1">
-				<label for="">Förnamn</label>
-				<input class="namn" type="text" placeholder="Förnamn">
-			</div>
-			<div class="input-box2">
-				<label for="">Efternamn</label>
-				<input class="namn" type="text" placeholder="Efternamn">
-			</div>
-	</div>
-
-			<div class="input-box3">
-				<label for="">E-post</label>
-				<input class="email" type="text" placeholder="E-post">
-			</div>
-
-	<label class="Dagar">Hur många dagar vill du anmäla?</label>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="veckodag">Fredag</lable>
-		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodag" for="vackodag">Lördag</lable>
-		
-	</p>
-	<p class="form-checkbox">
-		<input id="E-mail" type="checkbox" />
-		<lable class="veckodagSöndag" for="veckodag">Söndag</lable>
-		
-	</p>
-	<p class="allergier">
-		<lable>Allergier och övrigt</lable>
-		<input class="annat" type="text" placeholder="Övrigt" />
-	</p>
-	
-	<button type="submit"><a href="submitted.html" >Skicka anmälan</a></button>
+			<h2>Anmäl dig till Bättre Webb i Göteborg 2024!</h2>
+			<p>Konferensen sträcker sig över tre dagar och kostar 3 000 kr per dag.</p> <p>Bokar du två dagar får du 10 % rabatt på totalkostnaden,</p> <p>och vid bokning av alla tre dagar får du 20 % rabatt.</p> <p>Fakturan skickas till den e-postadress som du anger vid anmälan.</p> <p>Passa på att boka för att ta del av rabatterna!</p>
+			<div class="inputdiv">
+				<div class="input-box1">
+					<label for="">Förnamn</label>
+					<input class="namn" type="text" required placeholder="Förnamn">
+				</div>
+				<div class="input-box2">
+					<label for="">Efternamn</label>
+					<input class="namn" type="text" required placeholder="Efternamn">
+				</div>
 		</div>
+
+				<div class="input-box3">
+					<label for="">E-post</label>
+					<input class="email" type="email" required pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9-]+\.[a-z]{2,4}" placeholder="E-post">
+				</div>
+
+		<label class="Dagar">Hur många dagar vill du anmäla?</label>
+		<div class="flexbox">
+			<p class="form-checkbox">
+				<div class="mat-input1">
+					<input id="fredag" type="checkbox" name="dag1-box">
+					<label for="fredag">Fredag</label>
+				
+					<input type="checkbox" id="mat-dag-1" name="mat-dag1-box">
+					<label class="mat-lable1" for="mat-dag-1">Vill du ha mat?</label>
+				</div>
+
+				<div class="vadförmat1">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Kött?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fisk?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetariskt?</label>
+					</p>
+				
+				</div>
+				
+				
+				
+			</p>
+			<p class="form-checkbox">
+				<div class="mat-input2">
+					<input id="lördag" type="checkbox" />
+					<label for="lördag">Lördag</label>
+
+					<input type="checkbox" id="mat-dag-2" name="mat-dag2-box">
+					<label class="mat-lable2" for="mat-dag-2">Vill du ha mat?</label>
+				</div>
+
+				<div class="vadförmat2">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Kött?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fisk?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetariskt?</label>
+					</p>
+				
+				</div>
+				
+			</p>
+			<p class="form-checkbox">
+				<div class="mat-input3">
+					<input id="söndag" type="checkbox"/>
+					<label for="söndag">Söndag</label>
+
+					<input type="checkbox" id="mat-dag-3" name="mat-dag3-box">
+					<label class="mat-lable3" for="mat-dag-3">Vill du ha mat?</label>
+				</div>
+
+				<div class="vadförmat3">
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="kött" name="vad-fär-mat">
+						<label class="valt-kött" for="kött">Kött?</label> 
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="fisk" name="vad-fär-mat">
+						<label class="valt-fisk" for="fisk">Fisk?</label>
+					</p>
+					<p class="vadförmat-flex">
+						<input type="checkbox" id="vegetariskt" name="vad-fär-mat">
+						<label class="valt-vegetariskt" for="vegetariskt">Vegetariskt?</label>
+					</p>
+				
+				</div>
+				
+				
+			</p>
+	</div>
+		<p class="allergier">
+			<lable class="other">Allergier och övrigt</lable>
+			<input class="annat" type="text" placeholder="Övrigt" />
+		</p>
+		<form action="/submitted.html" method="get">
+		<button type="submit" formaction="/submitted.html"> Skicka anmälan</button>
+		</form>
+</div>
 	
 
 

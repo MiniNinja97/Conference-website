@@ -1,4 +1,4 @@
-* {
+/* * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -18,45 +18,49 @@ body {background-color: black;}
     width: 100%;
     position: fixed;              
     z-index: -1; 
-}
+} */
 
 /* här börjar headerns css*/
 
-header{
+/* header{
 	background-color: black;
 	display: flex;
-	justify-content: flex-start;
+	
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 2em;
 	flex-wrap: wrap;
 	margin-bottom: 10em;
 }
-
+.mellanrum {
+	flex-grow: 1;
+}
 a { 
 	text-decoration: none;
 	color: white;
-	
+	font-size: 1.4em;
+	font-weight:bold
 }
 
-a:hover {
-	color: aqua;
+.flagga {
+	
+	margin-right: 1em;
 }
 
 .event-namn{
 	font-size: 3em;
 	font-style: italic;
 	color: white;
-	margin-right: 6.4em;
-	margin-left: 2em;
 	
-}
+	margin-left: 1em;
+	
+} */
 
-.event-namn:hover{
-
+/* .event-namn:hover{
 	color: aqua;
-}
+} */
 
-.kalender-link{
+/* .kalender-link{
 	margin-right: 10em;
 	font-size: 1.4em;
 	font-weight: bold;
@@ -67,25 +71,29 @@ a:hover {
 	font-size: 1.4em;
 	font-weight: bold;
 }
+a:hover {
+	color: aqua;
+} */
 
-.kalender-link:hover {
+/* .kalender-link:hover {
 	color: aqua;
 }
 
 .form-link:hover {
 	color: aqua;
 
-}
+} */
 
 /* här sluter header css*/
 
 .registration{
-	flex-wrap: wrap;
+	
 	display: flex;
 	flex-direction: column;
-	color: white;
+	color: rgb(252, 239, 239);
 	justify-content: center;
 	align-items: center;
+	
     background-color: rgba(27, 26, 26, 0.637);
     /*margin-left: 28em;
 	margin-right: 28em;*/
@@ -93,20 +101,25 @@ a:hover {
     margin-bottom: 10em;
 	margin-top: 5em;
 	font-size: 1.2em;
-	max-width: 60vw;
+	min-width: 60vw;
 	margin-left: 20%;
 	margin-right: 20%;
 	
 	
 	
 }
+h2 {
+	margin-bottom: 1em;
+}
+
 label {
 	margin-bottom: 0.5em;
 	margin-top: 0.5em;
 	
 }
  .namn {
-	max-width: 20em;
+	max-width: 100%;
+	
 	height: 3em;
 	border-radius: 10px;
 	border: 0px;
@@ -115,35 +128,41 @@ label {
 	
 	
  }
-.input {
+.inputdiv {
 	display: flex;
     flex-direction: row;
 	margin-top: 2em;
 	flex-wrap: wrap;
 	margin-left: 1em;
 	margin-right: 1em;
-	
-	
-	
 }
+
 .input-box1  {
 	display: flex;
 	flex-direction: column;
-	margin-left: 4em;
-	margin-right: 1em;
+	margin: 1em;
+	
 }
+
+
 .input-box2  {
 	display: flex;
 	flex-direction: column;
-	margin-right: 4em;
-	margin-left: 1em;
+	margin: 1em;
+	
 }
 .input-box3  {
 	display: flex;
 	flex-direction: column;
 }
+input:invalid {
+	border: 3px solid red;
+}
+input:valid {
+	border: 3px solid greenyellow;
+}
 .email {
-	min-width: 30em;
+	width: 28em;
 	height: 3em;
 	border-radius: 10px;
 	border: 0px;
@@ -158,55 +177,144 @@ label {
 	font-weight: bold;
  }
 
+ .flexbox {
+	display: flex;
+	flex-direction: column;
+ }
 .form-checkbox {
 	display: flex;
 	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 	margin-top: 1em;
-	margin-right: 14.2em;
+	
 }
 
-.veckodag{
-	margin-left: 1em;
+.vadförmat1, .vadförmat2, .vadförmat3{
+	display: flex;
+	margin-left: 4.2em; 
+	
+	
 }
-.veckodagSöndag{
-	margin-left: 0.6em;
-	margin-bottom: 2em;
+
+.vadförmat-flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+	margin-left: 2.4em;
 }
+.mat-input1, .mat-input2, .mat-input3 {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+
 
 .allergier {
 	display: flex;
 	flex-direction: column;
+	margin-top: 2em;
 	margin-bottom: 3em;
 	font-weight: bold;
 }
 
 .annat {
-	min-width: 30em;
+	width: 30em;
 	height: 10em;
 	border-radius: 10px;
 	border: 0px;
 	padding: 0.5em;
 	cursor: pointer;
-	
 	margin-top: 2em;
+}
+.annat:valid {
+	border: 0px  ;
 }
 
 input[type="checkbox"] {
 	width: 2em;
 	height: 2em;
 	
+	margin-right: 2em;
+}
+input[type="checkbox"]:hover {
+	cursor: pointer;
+	
 	
 }
+#mat-dag-1 {
+	margin-left: 2em;
+
+}
+#mat-dag-2 {
+	margin-left: 2em;
+}
+#mat-dag-3 {
+	margin-left: 1.8em;
+}
+
+
+
+.vadförmat1, .vadförmat2, .vadförmat3 {
+	opacity: 0;
+	max-height: 0;
+	/* transition: opacity 0.5s ease-in-out; */
+	visibility: hidden;
+	transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+}
+#mat-dag-1, .mat-lable1,
+#mat-dag-2, .mat-lable2,
+#mat-dag-3, .mat-lable3 {
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.5s;
+	visibility: hidden;
+	
+} 
+ #fredag:checked ~ #mat-dag-1,
+#fredag:checked ~ .mat-lable1,
+#lördag:checked ~ #mat-dag-2,
+#lördag:checked ~ .mat-lable2,
+#söndag:checked ~ #mat-dag-3,
+#söndag:checked ~ .mat-lable3
+
+ {
+	opacity: 1;
+	pointer-events: auto;
+	visibility: visible;
+}
+.mat-input1:has(#mat-dag-1:checked) ~ .vadförmat1 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+.mat-input2:has(#mat-dag-2:checked) ~ .vadförmat2 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+.mat-input3:has(#mat-dag-3:checked) ~ .vadförmat3 {
+	opacity: 1;
+	max-height: 4em;
+	visibility: visible;
+}
+
+
 
 button {
 	padding: 1em;
 	background-color: rgb(12, 135, 206);
-	border: 0.5px lightgray;
+	border: none;
 	font-size: 1em;
 	border-radius: 8px;
-	color: white;
-	font-size: 1.2em;
-	margin-top: 2em;
+	color: rgb(252, 239, 239);
+	box-shadow: 1 1 1.4 1.2 grey;
+	
 }
 
 button:hover {
@@ -215,27 +323,115 @@ button:hover {
 }
 
 
+/* @media (max-width:900px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	.titel {
+		font-size: 1.8em;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+ .registration{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+
+ }
+ .email {
+	width: 32em;
+ }
+ .annat {width: 25em;}
+}
+
+@media (max-width:870px) {
+	body {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	}
+	a {
+		margin-top: 1em;
+		margin-left: 4em;
+	}
+	
+	.titel {
+		font-size: 1.8em;
+	}
+	header {
+		display: flex;
+		justify-content: center;
+		align-content: center;
+	}
+	.registration{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+	
+	 }
+	 .email {
+		width: 22em;
+	 }
+	 .annat {
+		width: 20em;
+	}
+} */
+
 @media (max-width:720px) {
 	body {
 		display: flex;
 		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
 	}
-	a {
+	
+	.registration{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-content: center;
+		min-width: 80vw;
+	
+	 }
+	 .email {
+		width: 15em;
+	 }
+	 .annat {width: 15em;}
+	 /* .form-checkbox {
+		margin-left: 20%;
+		
+		
+		margin-right: 20%;
+	 } */
+	 .vadförmat1, .vadförmat2, .vadförmat3 {
+		margin-right: 4.5em;
 		margin-top: 1em;
-	}
-	.kalender-link{
-		margin-right: 4em;
-	}
-
-	.input-box1  {
 		
-		margin-left: 0em;
-		margin-right: 0em;
-	}
-	.input-box2  {
 		
-		margin-right: 0em;
-		margin-left: 0em;
-	}
 
+	 }
+	 /* .vadförmat-flex {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-content: center;
+	
+	 } */
 }
