@@ -128,23 +128,23 @@ label {
 	
 	
  }
-.input {
+.inputdiv {
 	display: flex;
     flex-direction: row;
 	margin-top: 2em;
 	flex-wrap: wrap;
 	margin-left: 1em;
 	margin-right: 1em;
-	
-	
-	
 }
+
 .input-box1  {
 	display: flex;
 	flex-direction: column;
 	margin: 1em;
 	
 }
+
+
 .input-box2  {
 	display: flex;
 	flex-direction: column;
@@ -154,6 +154,12 @@ label {
 .input-box3  {
 	display: flex;
 	flex-direction: column;
+}
+input:invalid {
+	border: 3px solid red;
+}
+input:valid {
+	border: 3px solid greenyellow;
 }
 .email {
 	width: 28em;
@@ -224,8 +230,10 @@ label {
 	border: 0px;
 	padding: 0.5em;
 	cursor: pointer;
-	
 	margin-top: 2em;
+}
+.annat:valid {
+	border: 0px  ;
 }
 
 input[type="checkbox"] {
@@ -255,7 +263,7 @@ input[type="checkbox"]:hover {
 .vadförmat1, .vadförmat2, .vadförmat3 {
 	opacity: 0;
 	max-height: 0;
-	transition: opacity 0.5s ease-in-out;
+	/* transition: opacity 0.5s ease-in-out; */
 	visibility: hidden;
 	transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
 }
